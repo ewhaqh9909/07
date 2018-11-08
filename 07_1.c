@@ -14,6 +14,6 @@ int main(int argc, char *argv[]) {
 	printf("i의 값:%i\n",i);
 	
 	printf("ptr의 주소:%u\n",ptr);
-	printf("ptr의값:%i\n",*ptr);
+	printf("ptr의 값:%i\n",*ptr);
 	return 0;
 }
