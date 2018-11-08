@@ -4,19 +4,18 @@
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main(int argc, char *argv[]) {
-	int x=10;
-	int y=20;
+	int grade[5]={10,20,30,40,50};
+	int average;
+	int *ptr;
 	
-	int*ptr;
-	
-	ptr=&x;
-	printf("x:%i\n",*ptr);
-	
-	ptr=&y;
-	printf("y:%i\n",*ptr);
-	
-	ptr=&x;
-	*ptr=20;
-	printf("x:%i\n",x); 
+	int i;
+	//pointer setting
+	ptr=grade;
+	//average calculation
+	for(i=0;i<5;i++)
+	{
+		average+=*(ptr+i);//ptr[i]
+	}
+	printf("average:%i\n",average/5);
 	return 0;
 }
